@@ -1,1 +1,198 @@
-// Your styles go here
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  --btn-background: rgb(188, 182, 182);
+  --body-background: #7fffd4;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+header {
+  // border: 2px solid red;
+  border: none;
+}
+
+body {
+  //   display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  //   font-size: 1rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--body-background);
+}
+nav {
+  background-color: var(--body-background);
+  //   border: 2px solid blue;
+}
+nav > ul {
+  margin: 0 auto;
+  background-color: var(--btn-background);
+  //   border: 2px solid blue;
+
+  text-align: center;
+  padding: 1em 2em;
+}
+nav > ul > li {
+  display: inline-block;
+  border-right: 2px solid black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  //   background-color: green;
+  text-align: center;
+}
+nav > ul > li:hover {
+  background-color: green;
+}
+nav > ul > li:last-child {
+  border-right: none;
+}
+li > a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  background-color: grey;
+  padding: 0.5em 2em 3em 2.5em;
+}
+img {
+  height: auto;
+  height: auto;
+  display: block;
+  width: 400px;
+}
+button {
+  background-color: var(--btn-background);
+  padding: 1em 2em;
+  margin: 0.5em auto;
+  font-size: 1rem;
+  border-radius: 2em;
+}
+/* HIDE HAMBURGER ICON */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+/* CLASSES */
+.bottom-nav button:nth-child(2) {
+  background-color: var(--body-background);
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-blog {
+  display: block;
+}
+.div-image {
+  //   border: 2px solid green;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.post-box {
+  border-bottom: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0.5em;
+}
+.post {
+  margin-left: 26em;
+}
+.post-header h4 {
+  //   border: 2px solid lightcoral;
+  margin-right: 2em;
+}
+.search input {
+  height: 3em;
+  width: 15em;
+  margin: 1em auto;
+  padding: 0.3em 1em;
+  border-radius: 2em;
+}
+.bottom-nav {
+  font-size: 1rem;
+  //   border: 2px solid lightseagreen;
+  text-align: center;
+  padding: 0.5em 2em;
+}
+.bottom-nav > button {
+  width: 10em;
+  margin: 0 0.3em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  /* Menu display on screen <900px */
+  nav > ul > li {
+    display: block;
+    border-bottom: 2px solid black;
+    border-right: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.2rem 1rem;
+    text-align: center;
+  }
+  nav > ul > li:last-child {
+    border-bottom: none;
+  }
+
+  .pull-left,
+  .pull-right {
+    float: none;
+  }
+  .search {
+    display: none;
+  }
+
+  .post {
+    margin-left: 0;
+  }
+  .bottom-nav > button {
+    width: 6em;
+    margin: 0 0.3em;
+    text-align: center;
+  }
+  .social-media {
+    display: none;
+  }
+  .centered {
+    text-align: center;
+  }
+  /* SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    font-size: 3rem;
+    font-style: normal;
+    padding: 0px 15px;
+    background-color: var(--btn-background);
+  }
+  /* HIDE MENU ITEMS BY DEFAULT  */
+  #navmenu {
+    display: none;
+    transition: display 4s;
+  }
+  /* TOGGLE SHOW/HIDE MENU */
+  #hamnav input:checked ~ #navmenu {
+    display: block;
+  }
+}

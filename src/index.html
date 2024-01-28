@@ -1,16 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Project Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <header class="header-blog">
+      <div class="clearfix">
+        <h1 class="pull-left">Papy Olenga's Blog</h1>
+        <div class="search pull-right">
+          <form>
+            <input name="fsrch" id="fsrch" placeholder="Type to search" />
+          </form>
+        </div>
+      </div>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+      <nav id="hamnav">
+        <!-- Hamburger Icon -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <ul id="navmenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Recent Posts</a></li>
+          <li><a href="#">Old Posts</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="post-box clearfix">
+      <div class="div-image pull-left">
+        <img src="images/pic1.jpg" alt="first-image" height="195px" width="395px" />
+      </div>
+      <div class="post">
+        <h2>Paris' view from Eiffel Tower</h2>
+        <section class="post-header">
+          <h4 class="pull-left">By Papy Olenga</h4>
+          <h4>On August 31,2022</h4>
+        </section>
+
+        <p>
+          <span
+            >This is a picture I shot from the top of the Eiffel Tower. Located directly to the north of the tower
+            across the Seine are the Trocadéro square and gardens, flanked by the Palais Chaillot and its museums. The
+            architecture here is stunning. A beautiful fountain is lined on both sides by grassy knolls, leading up to a
+            grand staircase on either side. This setup makes for a beautiful and unique photo composition — it’s another
+            angle of Paris. And directly to the south you’ll spot the Champs de Mars. A half-mile long grassy field
+            nearly a half-mile long right under the Eiffel Tower? No wonder this is a favorite picnic spot for visitors
+            and locals alike. <em>Source:</em>
+            <a href="https://www.eiffeltowertour.com/blog/everything-you-can-see-from-the-eiffel-tower/" target="_blank"
+              >Eiffel Tower</a
+            ></span
+          >
+        </p>
+        <button><a href="#">Read more</a></button>
+      </div>
+    </div>
+    <div class="post-box clearfix">
+      <div class="div-image pull-left">
+        <img src="images/miti.jpg" alt="second-image" height="195px" width="395px" />
+      </div>
+      <div class="post">
+        <h2>Mitraillette</h2>
+        <section class="post-header">
+          <h4 class="pull-left">By Papy Olenga</h4>
+          <h4>On August 25,2022</h4>
+        </section>
+
+        <p>
+          <span
+            >This is my best memory of my trip to Belgium in 2022. The Mitraillette is a typical Belgian sandwich,
+            loaded with a spicy beef patty, crispy lettuce, belgian fries, and a homemade Andalouse sauce. A
+            mitraillette is commonly served at friteries and cafés everywhere in Belgium. It is popular among students.
+            It is thought to have originated in Brussels, but is also popular in Flanders, Wallonia, and the Nord region
+            of France, where it is also known as an "Américain".</span
+          ><span
+            >The mitraillette is a foot-long baguette sandwich bursting with fries, mayonnaise, and mystery meat.
+            Mitraillette means "submachine gun" in French. There's nothing more Belgian than fries: the country claims
+            to have invented them. <em>Source:</em>
+            <a href="https://www.saveur.com/brussels-sandwich-mitraillette/" target="_blank">Saveur.com</a>
+          </span>
+        </p>
+        <button><a href="#">Read more</a></button>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <button><a href="#">Prev</a></button>
+      <button><a href="#">1/4</a></button>
+      <button><a href="#">Next</a></button>
+    </div>
+    <footer class="clearfix">
+      <div class="pull-left social-media">
+        <span><strong>Facebook</strong></span>
+        <span><strong>Twitter</strong></span>
+        <span><strong>Google+</strong></span>
+      </div>
+      <div class="pull-right centered">
+        <span><strong>Papy Olenga</strong></span>
+        <span><strong>&copy; All Rights Reserved</strong></span>
+      </div>
+    </footer>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>
